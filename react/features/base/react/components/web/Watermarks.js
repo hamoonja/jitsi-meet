@@ -224,13 +224,13 @@ class Watermarks extends Component<Props, State> {
                 <div className="watermark leftwatermark" style={style} />
             );
 
-            if (link) {
-                reactElement = (
-                    <a href={link} target="_new">
-                        {reactElement}
-                    </a>
-                );
-            }
+            // if (link) {
+            //     reactElement = (
+            //         <a href={link} target="_new">
+            //             {reactElement}
+            //         </a>
+            //     );
+            // }
         }
 
         return reactElement;

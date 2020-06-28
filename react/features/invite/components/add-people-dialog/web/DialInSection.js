@@ -1,14 +1,13 @@
 // @flow
 
-import React from 'react';
+import React from "react";
 
-import { translate } from '../../../../base/i18n';
-import { getDialInfoPageURL } from '../../../functions';
+import { translate } from "../../../../base/i18n";
+import { getDialInfoPageURL } from "../../../functions";
 
-import DialInNumber from './DialInNumber';
+import DialInNumber from "./DialInNumber";
 
 type Props = {
-
     /**
      * The name of the current conference. Used as part of inviting users.
      */
@@ -33,8 +32,7 @@ type Props = {
     /**
      * Invoked to obtain translated strings.
      */
-    t: Function
-
+    t: Function,
 };
 
 /**
@@ -49,24 +47,21 @@ function DialInSection({
     dialIn,
     locationUrl,
     phoneNumber,
-    t
+    t,
 }: Props) {
     return (
-        <div className = 'invite-more-dialog dial-in-display'>
+        <div className="invite-more-dialog dial-in-display">
             <DialInNumber
-                conferenceID = { dialIn.conferenceID }
-                phoneNumber = { phoneNumber } />
+                conferenceID={dialIn.conferenceID}
+                phoneNumber={phoneNumber}
+            />
             <a
-                className = 'more-numbers'
-                href = {
-                    getDialInfoPageURL(
-                        conferenceName,
-                        locationUrl
-                    )
-                }
-                rel = 'noopener noreferrer'
-                target = '_blank'>
-                { t('info.moreNumbers') }
+                className="more-numbers"
+                href={getDialInfoPageURL(conferenceName, locationUrl)}
+                rel="noopener noreferrer"
+                target="_blank"
+            >
+                {t("info.moreNumbers")}
             </a>
         </div>
     );

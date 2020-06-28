@@ -1,13 +1,13 @@
 // @flow
 
-import COUNTRIES_RESOURCES from 'i18n-iso-countries/langs/en.json';
-import i18next from 'i18next';
-import I18nextXHRBackend from 'i18next-xhr-backend';
+import COUNTRIES_RESOURCES from "i18n-iso-countries/langs/en.json";
+import i18next from "i18next";
+import I18nextXHRBackend from "i18next-xhr-backend";
 
-import LANGUAGES_RESOURCES from '../../../../lang/languages.json';
-import MAIN_RESOURCES from '../../../../lang/main.json';
+import LANGUAGES_RESOURCES from "../../../../lang/languages.json";
+import MAIN_RESOURCES from "../../../../lang/main.json";
 
-import languageDetector from './languageDetector';
+import languageDetector from "./languageDetector";
 
 /**
  * The available/supported languages.
@@ -36,55 +36,58 @@ export const DEFAULT_LANGUAGE = LANGUAGES[0];
  */
 const options = {
     backend: {
-        loadPath: 'lang/{{ns}}-{{lng}}.json'
+        loadPath: "lang/{{ns}}-{{lng}}.json",
     },
-    defaultNS: 'main',
+    defaultNS: "main",
     fallbackLng: DEFAULT_LANGUAGE,
     interpolation: {
-        escapeValue: false // not needed for react as it escapes by default
+        escapeValue: false, // not needed for react as it escapes by default
     },
-    load: 'languageOnly',
-    ns: [ 'main', 'languages', 'countries' ],
+    load: "languageOnly",
+    ns: ["main", "languages", "countries"],
     react: {
-        useSuspense: false
+        useSuspense: false,
     },
     returnEmptyString: false,
     returnNull: false,
 
     // XXX i18next modifies the array lngWhitelist so make sure to clone
     // LANGUAGES.
-    whitelist: LANGUAGES.slice()
+    whitelist: LANGUAGES.slice(),
 };
 
 i18next
-    .use(navigator.product === 'ReactNative' ? {} : I18nextXHRBackend)
+    .use(navigator.product === "ReactNative" ? {} : I18nextXHRBackend)
     .use(languageDetector)
     .init(options);
 
 // Add default language which is preloaded from the source code.
 i18next.addResourceBundle(
     DEFAULT_LANGUAGE,
-    'countries',
+    "countries",
     COUNTRIES_RESOURCES,
     /* deep */ true,
-    /* overwrite */ true);
+    /* overwrite */ true
+);
 i18next.addResourceBundle(
     DEFAULT_LANGUAGE,
-    'languages',
+    "languages",
     LANGUAGES_RESOURCES,
     /* deep */ true,
-    /* overwrite */ true);
+    /* overwrite */ true
+);
 i18next.addResourceBundle(
     DEFAULT_LANGUAGE,
-    'main',
+    "main",
     MAIN_RESOURCES,
     /* deep */ true,
-    /* overwrite */ true);
+    /* overwrite */ true
+);
 
 // Add builtin languages.
 // XXX: Note we are using require here, because we want the side-effects of the
 // import, but imports can only be placed at the top, and it would be too early,
 // since i18next is not yet initialized at that point.
-require('./BuiltinLanguages');
+require("./BuiltinLanguages");
 
 export default i18next;
