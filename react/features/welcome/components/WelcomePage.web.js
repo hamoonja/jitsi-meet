@@ -230,7 +230,7 @@ class WelcomePage extends AbstractWelcomePage {
                                 : t("welcomepage.go")}
                         </div> */}
                     {/* </div> */}
-                    <button onClick={this._onFormSubmit}>GoTo The Room</button>
+                    {/* <button onClick={this._onFormSubmit}>GoTo The Room</button> */}
                     {/* {this._renderTabs()} */}
                 </div>
                 {showAdditionalContent ? (

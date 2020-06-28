@@ -1,11 +1,15 @@
 {
     "addPeople": {
-        "add": "",
+        "add": "اضافه کردن افراد",
+        "addContacts": "اضافه کردن از لیست مخاطبان",
         "countryNotSupported": "",
         "countryReminder": "",
-        "disabled": "",
+        "disabled": "شما نمی‌توانید کسی را به جلسه دعوت کنید",
         "failedToAdd": "",
         "footerText": "",
+        "inviteMoreHeader": "شما در این جلسه تنها هستید",
+        "inviteMoreMailSubject": "به جلسه‌ی آنلاین ما بیایید",
+        "inviteMorePrompt": "افراد بیش‌تری را دعوت کنید",
         "loading": "",
         "loadingNumber": "اعتبار سنجی شماره تلفن",
         "loadingPeople": "جستجوی افراد برای دعوت",
@@ -125,8 +129,8 @@
     "deviceSelection": {
         "noPermission": "",
         "previewUnavailable": "",
-        "selectADevice": "",
-        "testAudio": ""
+        "selectADevice": "یک دستگاه را انتخاب کنید",
+        "testAudio": "پخش کردن صدای نمونه"
     },
     "dialog": {
         "accessibilityLabel": {
@@ -389,7 +393,7 @@
         "label": "",
         "labelToolTip": "",
         "localRecording": "",
-        "me": "",
+        "me": "خودم",
         "messages": {
             "engaged": "",
             "finished": "",
@@ -420,7 +424,7 @@
         "invitedThreePlusMembers": "",
         "invitedTwoMembers": "",
         "kickParticipant": "",
-        "me": "",
+        "me": "خودم",
         "moderator": "",
         "muted": "",
         "mutedTitle": "",
@@ -457,10 +461,10 @@
         "ringing": ""
     },
     "profile": {
-        "setDisplayNameLabel": "",
+        "setDisplayNameLabel": "تنظیم اسم نشان‌داده شده",
         "setEmailInput": "",
         "setEmailLabel": "",
-        "title": ""
+        "title": "پروفایل"
     },
     "raisedHand": "می خواهم حرف بزنم",
     "recording": {
@@ -501,20 +505,21 @@
             "signedIn": "",
             "title": "تقویم"
         },
-        "devices": "",
+        "devices": "دستگاه‌ها",
         "followMe": "",
-        "language": "",
-        "loggedIn": "",
-        "moderator": "",
-        "more": "",
-        "name": "",
-        "noDevice": "",
-        "selectAudioOutput": "",
-        "selectCamera": "",
-        "selectMic": "",
-        "startAudioMuted": "همه با صدای قطع شده شروع کنند",
-        "startVideoMuted": "همه با صدای قطع شده شروع کنند",
-        "title": ""
+        "language": "زبان",
+        "loggedIn": "با عنوان {{name}} وارد شده‌اید",
+        "microphones": "میکروفون‌ها",
+        "moderator": "مدیر جلسه",
+        "more": "بیش‌تر",
+        "name": "نام",
+        "noDevice": "هیچ",
+        "selectAudioOutput": "خروجی صدا",
+        "selectCamera": "دوربین",
+        "selectMic": "میکروفون",
+        "startAudioMuted": "میکروفون همه شرکت‌کننده‌ها خاموش باشد",
+        "startVideoMuted": "دوربین همه شرکت‌کننده‌ها خاموش باشد",
+        "title": "تنظیمات"
     },
     "settingsView": {
         "advanced": "",
@@ -570,7 +575,7 @@
             "fullScreen": "",
             "hangup": "قطع کردن تماس",
             "help": "",
-            "invite": "",
+            "invite": "دعوت کردن افراد به جلسه",
             "kick": "",
             "localRecording": "تغییر تنظیمات کنترل ضبط",
             "lockRoom": "",
@@ -613,7 +618,7 @@
         "feedback": "گذاشتن بازخورد",
         "hangup": "ترک کردن",
         "help": "",
-        "invite": "",
+        "invite": "دعوت کردن افراد به جلسه",
         "login": "ورود",
         "logout": "",
         "lowerYourHand": "",
@@ -736,6 +741,10 @@
         "roomnameHint": "",
         "sendFeedback": "ارسال بازخورد",
         "terms": "اصطلاحات",
-        "title": ""
+        "title": "راه‌حل ساده و امن برای ویدیو کنفرانس"
+    },
+    "lonelyMeetingExperience": {
+        "button": "بقیه را دعوت کنید",
+        "youAreAlone": "شما در این تماس تنها هستید"
     }
 }

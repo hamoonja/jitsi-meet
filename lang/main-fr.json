@@ -6,6 +6,7 @@
         "disabled": "Vous ne pouvez pas inviter quelqu'un.",
         "failedToAdd": "Erreur lors de l'ajout des participants",
         "footerText": "Appels sortants désactivés.",
+        "inviteMoreHeader": "Vous êtes le seul à la réunion",
         "loading": "Rechercher des personnes et des numéros de téléphone",
         "loadingNumber": "Validation du numéro de téléphone",
         "loadingPeople": "Recherche de personnes à inviter",
