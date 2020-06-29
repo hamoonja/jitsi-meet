@@ -5,7 +5,7 @@ import Modal, { ModalFooter } from "@atlaskit/modal-dialog";
 import _ from "lodash";
 import React, { Component } from "react";
 
-import { translate } from "../../../i18n/functions";
+import { translate, findDirection } from "../../../i18n/functions";
 import type { DialogProps } from "../../constants";
 
 /**
@@ -123,8 +123,8 @@ class StatelessDialog extends Component<Props> {
             width,
         } = this.props;
 
-        console.log("inside stateless dialog language is:");
-        console.log(this.props.i18n.language);
+        // console.log("inside stateless dialog language is:");
+        // console.log(this.props.i18n.language);
 
         return (
             <Modal
@@ -140,7 +140,11 @@ class StatelessDialog extends Component<Props> {
                 shouldCloseOnEscapePress={true}
                 width={width || "medium"}
             >
-                <div onKeyDown={this._onKeyDown} ref={this._setDialogElement}>
+                <div
+                    onKeyDown={this._onKeyDown}
+                    ref={this._setDialogElement}
+                    dir={findDirection(this.props.i18n.language)}
+                >
                     <form
                         className="modal-dialog-form"
                         id="modal-dialog-form"

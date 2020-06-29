@@ -3,7 +3,14 @@
 /**
  * Style variables
  */
-$baseFontFamily: -apple-system, BlinkMacSystemFont, 'open_sanslight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$baseFontFamily: IRAN,
+-apple-system,
+BlinkMacSystemFont,
+'open_sanslight',
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
 $hangupColor: #bf2117;
 $hangupFontSize: 2em;
 
@@ -94,10 +101,10 @@ $chatHeaderBackgroundColor: rgba(42, 58, 75, 0.9);
 $chatInputSeparatorColor: #A4B8D1;
 $chatLocalMessageBackgroundColor: rgb(4, 98, 178);
 $chatPrivateMessageBackgroundColor: rgb(153, 69, 77);
-$chatRemoteMessageBackgroundColor:  rgb(86, 101, 114);
+$chatRemoteMessageBackgroundColor: rgb(86, 101, 114);
 $sidebarWidth: 375px;
 
- /**
+/**
  * Misc.
  */
 $borderRadius: 4px;
